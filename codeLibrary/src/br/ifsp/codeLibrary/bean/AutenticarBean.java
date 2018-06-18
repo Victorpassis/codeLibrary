@@ -22,7 +22,7 @@ public class AutenticarBean {
 	public String autenticar(){
 	
 		EntityManagerFactory factory = 
-				Persistence.createEntityManagerFactory("codeLibrary");
+				Persistence.createEntityManagerFactory("code_library");
 		EntityManager manager = factory.createEntityManager();
 		
 		UserRepository userRepository = 
