@@ -11,12 +11,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-		<title>Insert title here</title>
+		<title>Login</title>
 	</head>
 	<body>
-		<h:form>
-			<h:outputText value="Editora cadastradacom sucesso!" />
-		</h:form>	
+	<h:form>
+	    <h:outputLabel value="Login" style="font-weight:bold"/><br /><br />
+			 <h:outputLabel value="Apelido: "/>
+			 <h:inputText value="#{autenticarBean.login}" />
+			 
+			 <h:outputLabel value="Senha: "/>
+			 <h:inputText value="#{autenticarBean.senha}" />
+			 
+		 <h:commandButton value ="Salvar" action="#{autenticarBean.autenticar}"/>
+	 </h:form>
 	</body>
 </html>
 </jsp:root>
