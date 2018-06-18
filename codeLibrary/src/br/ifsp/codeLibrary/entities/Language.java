@@ -20,7 +20,7 @@ public class Language {
 	String nome;
 
 	@Column (name="descricao", nullable=false)
-	double descricao;
+	String descricao;
 
 	public int getId() {
 		return id;
@@ -38,11 +38,11 @@ public class Language {
 		this.nome = nome;
 	}
 
-	public double getDescricao() {
+	public String getDescricao() {
 		return descricao;
 	}
 
-	public void setDescricao(double descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 

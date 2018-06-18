@@ -25,7 +25,7 @@ public class Code {
 	double codigo;
 	
 	@Column (name="descricao", nullable=false)
-	double descricao;
+	String descricao;
 	
 	@Column (name="views", nullable=false)
 	double views;
@@ -62,11 +62,11 @@ public class Code {
 		this.codigo = codigo;
 	}
 
-	public double getDescricao() {
+	public String getDescricao() {
 		return descricao;
 	}
 
-	public void setDescricao(double descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 

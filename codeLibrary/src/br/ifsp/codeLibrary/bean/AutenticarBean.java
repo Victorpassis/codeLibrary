@@ -1,5 +1,7 @@
 package br.ifsp.codeLibrary.bean;
 
+import java.io.IOException;
+
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.ExternalContext;
@@ -7,7 +9,11 @@ import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpServletRequest;
 
 import br.ifsp.codeLibrary.entities.User;
 import br.ifsp.codeLibrary.repository.UserRepository;
@@ -18,6 +24,7 @@ public class AutenticarBean {
 	
 	private String login;
 	private String senha;
+	private boolean autentication;
 	
 	public String autenticar(){
 	
@@ -81,6 +88,10 @@ public class AutenticarBean {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+	public boolean getAutentication() {
+		return autentication;
 	}
 
 }

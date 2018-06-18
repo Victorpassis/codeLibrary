@@ -1,0 +1,82 @@
+package br.ifsp.codeLibrary.bean;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import br.ifsp.codeLibrary.entities.Code;
+import br.ifsp.codeLibrary.repository.CodeRepository;
+
+public class CodeBean {
+	
+	private static final long serialVersionUID = 1L;
+	private String nome, email, telefone, senha, apelido;
+	
+	
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	} 
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}	
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getSenha() {
+		return senha;
+	}
+
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public String getApelido() {
+		return apelido;
+	}
+
+	public void setApelido(String apelido) {
+		this.apelido = apelido;
+	}
+	
+	
+
+
+	public String cadastrarCode(){
+		
+		Code cd = new Code();
+		
+		
+		EntityManagerFactory factory =  
+		  Persistence.createEntityManagerFactory("code_library");
+		
+		EntityManager manager = factory.createEntityManager();
+		
+		CodeRepository codeRepository = 
+			new CodeRepository(manager);
+		
+		manager.getTransaction().begin();
+		
+		codeRepository.adiciona(cd);
+		
+		manager.getTransaction().commit(); 
+		
+		factory.close();
+		
+		
+		return "home";
+	}
+}
