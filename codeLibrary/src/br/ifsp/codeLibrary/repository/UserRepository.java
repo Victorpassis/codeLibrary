@@ -22,16 +22,16 @@ public class UserRepository {
 		return this.manager.find (User.class, id);
 	}
 	
-	public User busca (String apelido, String senha) {
+	public User busca (String login, String senha) {
 		Query query = 
-				this.manager.createQuery(" SELECT u FROM Usuario u "
-						+ "WHERE u.apelido= :apelido AND u.senha= :senha");
-	    query.setParameter("apelido",apelido); 
+				this.manager.createQuery("SELECT user FROM User as user "
+						+ "WHERE user.apelido= :login AND user.senha= :senha");
+	    query.setParameter("login",login); 
 	    query.setParameter("senha",senha);
 	    
 	    if (query.getResultList() != null && 
 	    		query.getResultList().size() != 0) {
-	    	return (Usuario) query.getResultList().get(0);
+	    	return (User) query.getResultList().get(0);
 	    } else {
 	    	return null;
 	    }

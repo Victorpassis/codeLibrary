@@ -14,6 +14,16 @@
 		<title>Login</title>
 	</head>
 	<body>
+	<h:form>
+	    <h:outputLabel value="Login" style="font-weight:bold"/><br /><br />
+			 <h:outputLabel value="Apelido: "/>
+			 <h:inputText value="#{autenticarBean.login}" />
+			 
+			 <h:outputLabel value="Senha: "/>
+			 <h:inputText value="#{autenticarBean.senha}" />
+			 
+		 <h:commandButton value ="Salvar" action="#{autenticarBean.autenticar}"/>
+	 </h:form>
 	</body>
 </html>
 </jsp:root>

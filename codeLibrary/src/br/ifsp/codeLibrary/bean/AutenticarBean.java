@@ -16,7 +16,7 @@ import br.ifsp.codeLibrary.repository.UserRepository;
 @ManagedBean
 public class AutenticarBean {
 	
-	private String user;
+	private String login;
 	private String senha;
 	
 	public String autenticar(){
@@ -30,22 +30,24 @@ public class AutenticarBean {
 		
 		manager.getTransaction().begin();
 		
-		User user = userRepository.busca(user, senha);
+		User user = userRepository.busca(login, senha);
 		
 		factory.close();
 		
 		FacesContext fc = FacesContext.getCurrentInstance();
 		
-		if (usuario != null) {
+		System.out.println(user);
+		
+		if (user != null) {
 			ExternalContext ec = fc.getExternalContext();
 			HttpSession session = (HttpSession)ec.getSession(false);
-			session.setAttribute("usuario", usuario);
+			session.setAttribute("usuario", user);
 			
 			return "home";
 		
 		} else {
 			
-			FacesMessage fm = new FacesMessage("Usu�rio e/ou senha inv�lidos.");
+			FacesMessage fm = new FacesMessage("Usuário e/ou senha inválidos.");
 			fm.setSeverity(FacesMessage.SEVERITY_ERROR);
 			fc.addMessage(null,fm);
 			
@@ -65,12 +67,12 @@ public class AutenticarBean {
 	}
 
 	
-	public String getUser() {
-		return user;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setUser(String user) {
-		this.user = user;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
 	public String getSenha() {

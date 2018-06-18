@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Livraria">
-        <property name="context-root" value="Livraria"/>
-        <property name="java-output-path" value="/Livraria/build/classes"/>
-    </wb-module>
-</project-modules>
