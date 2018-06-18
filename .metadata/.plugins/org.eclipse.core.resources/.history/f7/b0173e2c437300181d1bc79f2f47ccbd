@@ -35,9 +35,9 @@ public class Autentication implements Filter {
 		if(session.getAttribute("usuario") != null) {
 			this.autentication = true;	
 		} else {
+
 			this.autentication = false;
-		}
-		
+		}		
 		if(session.getAttribute("usuario") != null || 
 				req.getRequestURI().endsWith("login.xhtml") || 
 				req.getRequestURI().endsWith("register.xhtml") ||

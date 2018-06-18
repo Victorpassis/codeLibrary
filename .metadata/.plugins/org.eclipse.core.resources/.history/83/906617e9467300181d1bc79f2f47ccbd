@@ -23,7 +23,7 @@
 				<h:commandButton value="Logout" action="#{autenticarBean.registrarSaida}" style="width:100;" />
 			</h:panelGrid>
 			
-			<h:panelGrid rendered="#{!autentication.autentication}" columns="1" width="150" border="0" cellpadding="0" cellspacing="0" style="text-align:center;float:right;">
+			<h:panelGrid rendered="#{!autentication.autentication}" columns="1" width="150" border="0" cellpadding="0" cellspacing="0" style="text-align:center;">
 				<h:button value="Login" outcome="login" style="width:100;" />
 				<h:button value="Register" outcome="register" style="width:100;" />
 			</h:panelGrid>

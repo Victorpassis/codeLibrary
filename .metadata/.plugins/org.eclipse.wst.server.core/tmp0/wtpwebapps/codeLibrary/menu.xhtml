@@ -14,7 +14,7 @@
         <![CDATA[ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ]]>
     </jsp:text>
 		<h:form>
-			<h:panelGrid columns="1" width="150" border="0" cellpadding="0" cellspacing="0" style="text-align:center;">
+			<h:panelGrid rendered="#{autentication.autentication}" columns="4" width="150" border="0" cellpadding="0" cellspacing="0" style="text-align:center;float:right;">
 				<h:button value="code" outcome="code" style="width:100;" />
 				
 				<h:button value="#{autentication.autentication}" outcome="home" style="width:100;" />
@@ -23,8 +23,7 @@
 				<h:commandButton value="Logout" action="#{autenticarBean.registrarSaida}" style="width:100;" />
 			</h:panelGrid>
 			
-			<h:panelGrid rendered="#{autentication.autentication}" columns="1" width="150" border="0" cellpadding="0" cellspacing="0" style="text-align:center;">
-				
+			<h:panelGrid rendered="#{!autentication.autentication}" columns="1" width="150" border="0" cellpadding="0" cellspacing="0" style="text-align:center;float:right;">
 				<h:button value="Login" outcome="login" style="width:100;" />
 				<h:button value="Register" outcome="register" style="width:100;" />
 			</h:panelGrid>
