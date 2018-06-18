@@ -27,3 +27,16 @@
 0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:31:03 -0300] "POST /codeLibrary/CadastrarEdiora.xhtml HTTP/1.1" 200 1132
 0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:31:14 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1568
 0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:33:05 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+127.0.0.1 - - [18/Jun/2018:08:50:56 -0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:50:57 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1567
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:51:09 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:51:21 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1568
+127.0.0.1 - - [18/Jun/2018:08:54:03 -0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:54:04 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1568
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:08:54:11 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:04:24 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:04:25 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1558
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:29:08 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+127.0.0.1 - - [18/Jun/2018:09:31:11 -0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:31:12 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1559
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:31:23 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
