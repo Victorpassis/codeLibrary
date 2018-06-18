@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Users\victo\Desktop\codeLibrary\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3249241615.index
