@@ -40,3 +40,13 @@
 127.0.0.1 - - [18/Jun/2018:09:31:11 -0300] "GET / HTTP/1.1" 404 1073
 0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:31:12 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1559
 0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:31:23 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+127.0.0.1 - - [18/Jun/2018:09:40:00 -0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:40:00 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1560
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:40:08 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:09:42:18 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+127.0.0.1 - - [18/Jun/2018:10:07:26 -0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:10:07:28 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1558
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:10:07:35 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
+127.0.0.1 - - [18/Jun/2018:10:11:32 -0300] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:10:11:32 -0300] "GET /codeLibrary/register.xhtml HTTP/1.1" 200 1559
+0:0:0:0:0:0:0:1 - - [18/Jun/2018:10:11:39 -0300] "POST /codeLibrary/register.xhtml HTTP/1.1" 500 2834
